@@ -8,17 +8,22 @@
 </head>
 <html>
 <body>
-
-
-<input type="text" id="myText" value="Some text...">
-<button onclick="pluss()">Lisa kulu</button>
-<button onclick="miinus()">Lisa tulu</button>
+  <!--Kulu ja tulu nupud ja tekstiväli-->
+<div class="container">
+<div class="buttons">
+<input type="text" id="myText" value=""> <br><br><br>
+<a href="#" button class="button" id onclick="pluss()">Lisa tulu</a>
+<a href="#" button class="button" id onclick="miinus()">Lisa kulu</a>
+</div>
+</div>
 
 <p id="demo"></p>
-
-<div class="body">
-    <div id="Tulud" class="column">Tulud</div>
-    <div id="Kulud" class="column">Kulud</div>
+<!--Tulud ja kulud konteinerid-->
+<div class="container">
+  <div class="row">
+      <div class="column" id="Tulud">Tulud</div>
+      <div class="column" id="Kulud">Kulud</div>
+  </div>
 </div>
 
 
