@@ -8,15 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="grid">
-        <div class="Header"><input type="text" placeholder="Kirjeldus"></input> <input type="text" placeholder="Summa"></input> <button>+</button> <button>-</button></div>
-        <div class="footer">Vastus/jääk</div>
-        <div class="body">
-            <div class="Tulud">Tulud</div>
-            <div class="Kirjeldus">Kirjeldus</div>
-            <div class="Kulud">Kulud</div>
+    <div>
+        <div class="header">
+            <input type="text" placeholder="Kirjeldus">
+            </input> <input type="text" placeholder="Summa">
+            </input> <button>Lisa tulu</button> 
+            <button>Lisa kulu</button>
         </div>
-        <div class="Aside">Eelarvekalkulaator</div>
+        <div class="body">
+            <div id="Tulud" class="column">Tulud</div>
+            <div id="Kirjeldus" class="column">Kirjeldus</div>
+            <div id="Kulud" class="column">Kulud</div>
+        </div>
+        <div class="aside" style="float:right;">Eelarvekalkulaator</div>
+        <div class="footer">Vastus/jääk</div>
     </div>
 </body>
 </html>
