@@ -1,12 +1,11 @@
 html {
     font-family: 'Montserrat', sans-serif;
-
 }
 
 body {
-    background: #00B4DB;  
-    background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);  
-    background: linear-gradient(to left, #0083B0, #00B4DB); 
+    background: #667db6;  
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); 
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); 
 }
 
 .column {
@@ -77,4 +76,32 @@ a.button{
 p {
     font-size: 42px;
 
+}
+
+.negative {
+    color: red;
+    font-size: x-large;
+    font-weight: 700;
+}
+.positive {
+    color: green;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+#saldo p {
+        margin: 0.3em;
+    }
+    
+#saldo {
+    max-width: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
 }
