@@ -1,3 +1,8 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
 body {
     background: #00B4DB;  
     background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);  
@@ -6,15 +11,17 @@ body {
 
 .column {
     flex: 0 0 50%;
-    max-width: 50%;
-    border-radius: 50%;
-    border-color: #FFFFFF;
+    border-radius: 40%;
+    font-size: 40px;
+    max-width: 24rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
+    justify-content: center;
     text-align: center;
 }
 
@@ -32,7 +39,7 @@ a.button{
     border-radius:0.12em;
     box-sizing: border-box;
     text-decoration:none;
-    font-family:'Roboto',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight:300;
     color:#FFFFFF;
     text-align:center;
@@ -66,3 +73,8 @@ a.button{
     .numbrid:focus {
         outline: none;
    }
+
+p {
+    font-size: 42px;
+
+}
