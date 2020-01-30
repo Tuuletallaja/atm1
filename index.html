@@ -11,7 +11,7 @@
   <!--Kulu ja tulu nupud ja tekstiväli-->
 <div class="container">
 <div class="buttons">
-<input type="text" id="myText" value=""> <br><br><br>
+<input type="text" id="number" class="numbrid" value=""> <br><br><br>
 <a href="#" button class="button" id onclick="pluss()">Lisa tulu</a>
 <a href="#" button class="button" id onclick="miinus()">Lisa kulu</a>
 </div>
@@ -30,13 +30,13 @@
 <script>
 function pluss() {
   var btn = document.createElement("p");
-  btn.innerHTML = document.getElementById("myText").value
+  btn.innerHTML = document.getElementById("number").value
   document.getElementById("Tulud").appendChild(btn)
 }
 
 function miinus() {
   var btn = document.createElement("p");
-  btn.innerHTML = document.getElementById("myText").value
+  btn.innerHTML = document.getElementById("number").value
   document.getElementById("Kulud").appendChild(btn)
 }
 </script>

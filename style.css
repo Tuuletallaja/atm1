@@ -7,6 +7,8 @@ body {
 .column {
     flex: 0 0 50%;
     max-width: 50%;
+    border-radius: 50%;
+    border-color: #FFFFFF;
 }
 
 .row {
@@ -48,3 +50,19 @@ a.button{
     margin:0.4em auto;
     }
     }
+
+.numbrid {
+    padding: 0px;
+    font-size: 20px;
+    border-width: 3px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 0px;
+    box-shadow: 0px 16px 15px rgba(66,66,66,.75);
+    text-shadow: 0px 0px 0px rgba(66,66,66,.0);
+   }
+    .numbrid:focus {
+        outline: none;
+   }
