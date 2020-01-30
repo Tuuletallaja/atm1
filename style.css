@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: khaki;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    margin: 50px auto;
+    width: 100vw;
+}
+
+input {
+    height: 30px;
+}
+
+.body {
+    display: flex;
+    border: 1px dotted red;
+    flex-direction: row;
+    
+
+}
+
+.column {
+    margin: 30px;
+
+}
+
+
+.aside {
+    display: flex;
+    height: 100%;
+    width: 160px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+.footer {
+    display: flex;
+
+}
+
