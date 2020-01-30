@@ -1,51 +1,23 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: khaki;
-}
+body {
+    background: #00B4DB;  
+    background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);  
+    background: linear-gradient(to left, #0083B0, #00B4DB); 
 
-
-html {
-    box-sizing: border-box;
-}
-
-.header {
-    display: flex;
-    margin: 50px auto;
-    width: 100vw;
-}
-
-input {
-    height: 30px;
-}
-
-.body {
-    display: flex;
-    border: 1px dotted red;
-    flex-direction: row;
-    
 
 }
 
 .column {
-    margin: 30px;
-
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 
-
-.aside {
+.row {
     display: flex;
-    height: 100%;
-    width: 160px;
-    position: relative;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    margin: auto;
+    flex-wrap: wrap;
+    margin-right: -15px;
 }
 
-.footer {
-    display: flex;
+.kalkukas {
+    margin-left: 10px;
 
 }
