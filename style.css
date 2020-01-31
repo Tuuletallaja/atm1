@@ -1,33 +1,78 @@
-html {
+html{
     font-family: 'Montserrat', sans-serif;
+
+}
+
+ul {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
 
 body {
-    background: #667db6;  
-    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); 
-    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); 
+    margin-top: 5rem;
+    background: #00B4DB;  
+    background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);  
+    background: linear-gradient(to left, #0083B0, #00B4DB); 
+}
+
+#myText {
+    height: 2rem;
+    border: 2px;
+    border-color: slategray;
+    border-radius: 7px;
+}
+
+#saldo p {
+    margin: 0.3em;
+}
+
+#saldo {
+    max-width: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    border-radius:7px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
 }
 
 .column {
     flex: 0 0 50%;
-    border-radius: 40%;
-    font-size: 40px;
-    max-width: 24rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    max-width: 10rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: whitesmoke;
+    border-radius: 7px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     text-align: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: 700;
 }
 
 .buttons {
     text-align: center;
     margin-left: 10px;
+}
+ˇ
+.column {
+    border:0.1em solid #FFFFFF;
+}
 
+li {
+    width: 100%;
+    border-color: whitesmoke;
+    border: 1px;
+    list-style-type: none;
 }
 
 a.button{
@@ -38,44 +83,37 @@ a.button{
     border-radius:0.12em;
     box-sizing: border-box;
     text-decoration:none;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Roboto',sans-serif;
     font-weight:300;
     color:#FFFFFF;
     text-align:center;
-    transition: all 0.2s;
-    }
+    transition: all 0.4s;
+}
 
-    a.button:hover{
+a.button:hover{
     color:#000000;
-    background-color:#FFFFFF;
-    }
+    background-color:rgb(105, 231, 105);
+}
 
-    @media all and (max-width:30em){
-     a.button{
-    display:block;
-    margin:0.4em auto;
-    }
-    }
+a.butto{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.4s;
+}
 
-.numbrid {
-    padding: 0px;
-    font-size: 20px;
-    border-width: 3px;
-    border-color: #CCCCCC;
-    background-color: #FFFFFF;
-    color: #000000;
-    border-style: solid;
-    border-radius: 0px;
-    box-shadow: 0px 16px 15px rgba(66,66,66,.75);
-    text-shadow: 0px 0px 0px rgba(66,66,66,.0);
-   }
-    .numbrid:focus {
-        outline: none;
-   }
-
-p {
-    font-size: 42px;
-
+a.butto:hover{
+    color:#000000;
+    background-color:rgba(255, 72, 72, 0.9
+);
 }
 
 .negative {
@@ -84,24 +122,14 @@ p {
     font-weight: 700;
 }
 .positive {
-    color: green;
+    color: rgb(0, 185, 0);
     font-size: x-large;
     font-weight: 700;
-}
 
-#saldo p {
-        margin: 0.3em;
+@media all and (max-width:30em){
+    a.button{
+        display:block;
+        margin:0.4em auto;
     }
-    
-#saldo {
-    max-width: 10em;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    font-size: x-large;
-    font-weight: 700;
-    text-align: center;
+}
 }
