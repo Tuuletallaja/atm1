@@ -15,6 +15,7 @@ body {
     border: 2px;
     border-color: slategray;
     border-radius: 7px;
+    
 
 }
 
@@ -100,6 +101,8 @@ a.button:hover{
     color: rgb(0, 185, 0);
     font-size: x-large;
     font-weight: 700;
+}
+  
 
 @media all and (max-width:30em){
     a.button{
