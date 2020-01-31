@@ -1,6 +1,8 @@
 # atm1
 Eelarve kalkulaator
-tak18tambaum.itmajakas.ee
+
+https://tak18tambaum.itmajakas.ee/
+
 https://www.figma.com/file/XSTtkSlVCl87GsU6ha88pX/Untitled?node-id=0%3A1
 
 
