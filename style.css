@@ -1,25 +1,74 @@
+ul {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
 body {
+    margin-top: 5rem;
     background: #00B4DB;  
     background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);  
     background: linear-gradient(to left, #0083B0, #00B4DB); 
 }
 
+#myText {
+    height: 2rem;
+    border: 2px;
+    border-color: slategray;
+    border-radius: 7px;
+
+}
+
+#saldo p {
+    margin: 0.3em;
+}
+
+#saldo {
+    max-width: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    border-radius:7px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
+}
+
 .column {
     flex: 0 0 50%;
-    max-width: 50%;
+    max-width: 10rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: whitesmoke;
+    border-radius: 7px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
     text-align: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: 700;
 }
 
 .buttons {
     text-align: center;
     margin-left: 10px;
+}
+ˇ
+.column {
+    border:0.1em solid #FFFFFF;
+}
 
+li {
+    width: 100%;
+    border-color: whitesmoke;
+    border: 1px;
+    list-style-type: none;
 }
 
 a.button{
@@ -35,16 +84,26 @@ a.button{
     color:#FFFFFF;
     text-align:center;
     transition: all 0.2s;
-    }
+}
 
-    a.button:hover{
+a.button:hover{
     color:#000000;
     background-color:#FFFFFF;
-    }
+}
 
-    @media all and (max-width:30em){
-     a.button{
-    display:block;
-    margin:0.4em auto;
+.negative {
+    color: red;
+    font-size: x-large;
+    font-weight: 700;
+}
+.positive {
+    color: rgb(0, 185, 0);
+    font-size: x-large;
+    font-weight: 700;
+
+@media all and (max-width:30em){
+    a.button{
+        display:block;
+        margin:0.4em auto;
     }
-    }
+}
