@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Eelarve kalkulaator</title>
 </head>
@@ -11,9 +12,11 @@
   <!--Kulu ja tulu nupud ja tekstiväli-->
 <div class="container">
 <div class="buttons">
-<input type="number" id="myText" value=""> <br><br><br>
+
+<input type="number" id="myText" value="" onkeydown="return event.keyCode !== 69" placeholder="                     €"> <br><br><br>
+
 <a href="#" button class="button" id onclick="pluss()">Lisa tulu</a>
-<a href="#" button class="button" id onclick="miinus()">Lisa kulu</a>
+<a href="#" button class="butto" id onclick="miinus()">Lisa kulu</a>
 </div>
 </div>
 
@@ -21,7 +24,9 @@
   <p style="font-weight: 900;">SALDO:</p>
   <p id="vahe"></p>
 </div>
-<!--Tulud ja kulud konteinerid-->
+
+<!--Tulud ja kulud konteiner-->
+
 <div class="container">
   <div class="row">
       <div class="column" >
@@ -41,23 +46,27 @@ var vahe = 0
 document.getElementById("vahe").innerHTML = vahe
 
 function pluss() {
-  var btn = document.createElement("li");
+  let btn = document.createElement("li");
   btn.classList.add('positive')
-  btn.innerHTML = document.getElementById("myText").value
+  let input = document.getElementById("myText");
+  if(input.value === "") return;
+  btn.innerHTML = input.value + " €"
   document.getElementById("tulud_values").appendChild(btn)
-  var tulu = +document.getElementById("myText").value
+  let tulu = +document.getElementById("myText").value 
   vahe = window.vahe + tulu
-  document.getElementById("vahe").innerHTML = vahe
+  document.getElementById("vahe").innerHTML = vahe + " €"
 }
 
 function miinus() {
-  var btn = document.createElement("li");
+  let btn = document.createElement("li");
   btn.classList.add('negative')
-  btn.innerHTML = document.getElementById("myText").value
+  let input = document.getElementById("myText");
+  if(input.value === "") return;
+  btn.innerHTML = input.value + " €"
   document.getElementById("kulud_values").appendChild(btn)
-  var tulu = document.getElementById("myText").value;
+  let tulu = document.getElementById("myText").value;
   vahe = window.vahe - tulu
-  document.getElementById("vahe").innerHTML = vahe
+  document.getElementById("vahe").innerHTML = vahe + " €"
 }
 
 </script>
