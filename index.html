@@ -11,34 +11,55 @@
   <!--Kulu ja tulu nupud ja tekstiväli-->
 <div class="container">
 <div class="buttons">
-<input type="text" id="myText" value=""> <br><br><br>
+<input type="number" id="myText" value=""> <br><br><br>
 <a href="#" button class="button" id onclick="pluss()">Lisa tulu</a>
 <a href="#" button class="button" id onclick="miinus()">Lisa kulu</a>
 </div>
 </div>
 
-<p id="demo"></p>
+<div id="saldo">
+  <p style="font-weight: 900;">SALDO:</p>
+  <p id="vahe"></p>
+</div>
 <!--Tulud ja kulud konteinerid-->
 <div class="container">
   <div class="row">
-      <div class="column" id="Tulud">Tulud</div>
-      <div class="column" id="Kulud">Kulud</div>
+      <div class="column" >
+        <div id="Tulud">Tulud</div>
+        <ul id="tulud_values"></ul>
+      </div>
+      <div class="column" >
+        <div id="Kulud">Kulud</div>
+        <ul id="kulud_values"></ul>
+      </div>
   </div>
 </div>
 
 
 <script>
+var vahe = 0
+document.getElementById("vahe").innerHTML = vahe
+
 function pluss() {
-  var btn = document.createElement("p");
+  var btn = document.createElement("li");
+  btn.classList.add('positive')
   btn.innerHTML = document.getElementById("myText").value
-  document.getElementById("Tulud").appendChild(btn)
+  document.getElementById("tulud_values").appendChild(btn)
+  var tulu = +document.getElementById("myText").value
+  vahe = window.vahe + tulu
+  document.getElementById("vahe").innerHTML = vahe
 }
 
 function miinus() {
-  var btn = document.createElement("p");
+  var btn = document.createElement("li");
+  btn.classList.add('negative')
   btn.innerHTML = document.getElementById("myText").value
-  document.getElementById("Kulud").appendChild(btn)
+  document.getElementById("kulud_values").appendChild(btn)
+  var tulu = document.getElementById("myText").value;
+  vahe = window.vahe - tulu
+  document.getElementById("vahe").innerHTML = vahe
 }
+
 </script>
 
 </body>
