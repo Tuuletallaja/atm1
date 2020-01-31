@@ -89,11 +89,11 @@ a.button{
     border-radius:0.12em;
     box-sizing: border-box;
     text-decoration:none;
-    font-family:'Roboto',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight:300;
     color:#FFFFFF;
     text-align:center;
-    transition: all 0.4s;
+    transition: ease-in 400ms;
 }
 
 a.button:hover{
@@ -109,7 +109,7 @@ a.butto{
     border-radius:0.12em;
     box-sizing: border-box;
     text-decoration:none;
-    font-family:'Roboto',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight:300;
     color:#FFFFFF;
     text-align:center;
